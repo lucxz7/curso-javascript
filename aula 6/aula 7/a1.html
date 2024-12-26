@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: chocolate;
+            font: normal 8pt arial;
+        }
+        .blaa {
+            margin-top: 50px;
+            margin-right: 200px;
+            margin-left: 50px;
+            padding-right: 20px;
+
+        }
+    </style>
+</head>
+<body> 
+    <h1 onmousemove="mensagem">sei lá o que colocar</h1>
+    <p>coisas blabla na sei o que escrever</p>
+    <p>jfjfjfjfjfjffjfjfjfjfjf</p>
+    <p>minha mae é maravilhosa</p>
+    <script>
+        var p1 = document.getElementsByTagName('p')[2]
+        document.write('hfhfhfhfhfhfhfhfh ' + p1.innerText)
+        p1.style.backgroundColor = 'blue'
+        p1.style.margin = '2px'
+        p1.style.padding = '1px'
+        p1.style.paddingRight = '60px'
+        var corpo = document.getElementsByTagName('body')[0]
+        corpo.style.backgroundColor = 'black'
+        corpo.style.color = 'white'
+        p1.style.textAlign = 'center'
+        function mensagem (onmousemove) {
+          let e = document.querySelector('h1')
+            e.innerText = 'hfhfhfhfhfhffhfhfhfh'
+          
+        }  
+    </script>
+</body>
+</html>

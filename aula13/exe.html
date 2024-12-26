@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="i1" id="i1"> Km/h
+    <input type="button" value="verificar" id="i2" onclick="i1()">
+    <p id="par"></p>
+
+    <script>
+        function i1() {
+            var input = document.getElementById('i1').value
+            if (input > 70) {
+                var n1 = document.getElementById('par')
+                n1.innerText ='PARA AGORA! VOCÊ ESTÁ SENDO MULTADO'
+            } else {
+                var n2 = document.getElementById('par')
+                n2.innerText ='parabens não fez nada mais que sua obrigação!'
+            }
+            
+        }
+    </script>
+</body>
+</html>

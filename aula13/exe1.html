@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu pais</title>
+    <style>
+        body {
+            font: bold 15pt arial ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fale o pais onde você mora!</h1>
+    Seu país: <input type="text" id="i1">
+    <input type="button" value="Receber" onclick="i1()">
+       <strong><p id="in1"></p></strong>
+
+
+    <script>
+        function i1() {
+            var input = document.getElementById('i1').value
+            if (input == 'brasil' || input == 'Brasil') {
+                var par1 = document.getElementById('in1')
+                in1.innerHTML = 'Parabens você é brasileiro'
+            }
+            else{
+                in1.innerHTML = 'Voce é estrangeiro, GET FUCK UP'
+            }
+        }
+    </script>
+</body>
+</html>

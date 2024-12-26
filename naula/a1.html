@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        div {
+            background-color: rgb(9, 136, 248);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>blablabla</p>
+    </div>
+    <script>
+        let u = document.getElementsByTagName('p')[0]
+        u.addEventListener('click', clicar)
+        u.addEventListener('mouseenter', entrou)
+        function clicar() {
+            u.innerText = 'clicou'
+        }
+        function entrou() {
+           
+            u.innerHTML= 'hdhdhdhdhdh'
+        }
+    </script>
+</body>
+</html>
